@@ -36,7 +36,7 @@ export default class Photos extends Component {
         <TouchableOpacity style={styles.Unggah}>
           <Text style={styles.UnggahText}>Unggah Foto</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.Lewati}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')} style={styles.Lewati}>
           <Text style={styles.LewatiText}>Lewati Dulu</Text>
         </TouchableOpacity>
       </View>

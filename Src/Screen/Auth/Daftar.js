@@ -77,7 +77,7 @@ export default class Daftar extends Component {
 
         <Text style={this.state.Dark ? Dark.Login : styles.Login}>
           Sudah punya akun ? Langsung
-          <Text style={this.state.Dark ? Dark.LoginPress : styles.LoginPress}>
+          <Text onPress={() => this.props.navigation.navigate('Login')} style={this.state.Dark ? Dark.LoginPress : styles.LoginPress}>
             {' '}
             Login{' '}
           </Text>

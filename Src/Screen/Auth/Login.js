@@ -68,13 +68,13 @@ export default class Login extends Component {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.Login}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('Photos')} style={styles.Login}>
           <Text style={styles.LoginText}>Login</Text>
         </TouchableOpacity>
 
         <Text style={this.state.Dark ? Dark.Daftar : styles.Daftar}>
           Belum punya akun ?
-          <Text style={this.state.Dark ? Dark.DaftarPress : styles.DaftarPress}>
+          <Text onPress={() => this.props.navigation.navigate('Register')} style={this.state.Dark ? Dark.DaftarPress : styles.DaftarPress}>
             {' '}
             Daftar{' '}
           </Text>
