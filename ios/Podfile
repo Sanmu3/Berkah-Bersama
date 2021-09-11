@@ -10,6 +10,8 @@ target 'Risuto' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
   target 'RisutoTests' do
     inherit! :complete
     # Pods for testing

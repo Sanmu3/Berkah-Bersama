@@ -99,6 +99,41 @@ export const styles = StyleSheet.create({
     textShadowOffset: {width: 2, height: 2},
     textShadowRadius: 5,
   },
+  modal: {
+    height: '40%',
+    width: '100%',
+    backgroundColor: '#F0F0F0',
+    position: 'absolute',
+    bottom: 0,
+    borderTopRightRadius: 25,
+    borderTopLeftRadius: 25,
+    elevation: 2,
+    alignItems: 'center',
+  },
+  textUpload: {
+    color: '#63FF',
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginTop:0
+  },
+  button: {
+    height: '15%',
+    width: '85%',
+    backgroundColor: '#63FF',
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 7,
+  },
+  buttonCancle: {
+    height: '15%',
+    width: '85%',
+    backgroundColor: '#CC0000',
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 7,
+  },
 });
 
 export const Dark = StyleSheet.create({
@@ -112,5 +147,10 @@ export const Dark = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#fff',
+  },
+  modal: {
+    height: '45%',
+    width: '100%',
+    backgroundColor: '#FFF',
   },
 });

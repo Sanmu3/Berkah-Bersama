@@ -11,16 +11,19 @@ export const Style = StyleSheet.create({
     containerIcon: {
         flexDirection: 'row',
         alignSelf: 'center',
-        marginHorizontal: 10
+        marginHorizontal: 10,
+        alignItems: 'center'
     },
     containerSearch: {
         flexDirection: 'row',
         alignItems: 'center',
         marginHorizontal: 10,
         borderWidth: 1,
-        width: '45%',
+        width: '48%',
         height: 40,
         borderRadius: 10,
         alignSelf: 'center',
+        paddingHorizontal: 7,
+        borderColor: '#7A63FF'
     }
 })
