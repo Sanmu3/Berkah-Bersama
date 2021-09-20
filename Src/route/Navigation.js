@@ -1,9 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import Splash from '../Screen/Auth/splashScreen';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Splash from '../Screen/Auth/SplashScreen';
 import Login from '../Screen/Auth/Login';
 import Register from '../Screen/Auth/Daftar';
 import Home from '../Screen/dashboard/home';
@@ -15,12 +14,20 @@ const Tab = createBottomTabNavigator();
 
 class Bottom extends React.Component {
   render() {
-    return(
+    return (
       <Tab.Navigator>
-        <Stack.Screen name='Home' component={Home} options={{headerShown: false}} />
-        <Stack.Screen name='Profile' component={Profile} options={{headerShown: false}} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{headerShown: false}}
+        />
       </Tab.Navigator>
-    )
+    );
   }
 }
 class Navigation extends React.Component {
