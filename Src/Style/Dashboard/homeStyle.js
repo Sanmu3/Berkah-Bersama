@@ -28,17 +28,17 @@ export const Style = StyleSheet.create({
     },
     card: {
         height: 200,
-        width: 150,
+        width: 140,
         backgroundColor: '#fff',
         borderRadius: 5,
-        margin: 5,
+        margin: 6,
         elevation: 2
     },
     cardArrow: {
         height: 200,
         width: 150,
         borderRadius: 10,
-        margin: 5,
+        margin: 6,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -47,18 +47,18 @@ export const Style = StyleSheet.create({
         width: 250,
         backgroundColor: '#fff',
         borderRadius: 5,
-        margin: 5,
+        margin: 6,
         elevation: 2
     },
     containerCard: {
         backgroundColor: '#fff',
         marginVertical: 5,
-        padding: 5,
+        padding: 6,
         elevation: 2
     },
     image: {
         height: 80,
-        width: 150,
+        width: 140,
         borderTopRightRadius: 5,
         borderTopLeftRadius: 5,
     },
@@ -78,8 +78,23 @@ export const Style = StyleSheet.create({
     },
     imageBig: {
         width: 250,
-        height: 100,
+        height: 120,
         borderTopRightRadius: 5,
         borderTopLeftRadius: 5,
+    },
+    containerList: {
+        width: '91%',
+        backgroundColor: 'white',
+        alignSelf: 'center',
+        borderBottomColor: '#b0b0b0',
+        borderBottomWidth: 0.5,
+        paddingVertical: 15,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    imageList: {
+        height: 106,
+        width: 160,
+        borderRadius: 3
     }
 })
